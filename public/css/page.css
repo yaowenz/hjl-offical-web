@@ -1,0 +1,256 @@
+.header {
+	width: 1200px;
+	padding: 21px 0 15px;
+}
+.hjl-logo {
+	display: inline-block;
+	width: 240px;
+	height: 58px;
+	background: url("../image/hjl-logo.png") no-repeat;
+}
+.nav li {
+	font-size:20px;
+	padding-top: 12px;
+	display: inline-block;
+}
+.nav a {
+	display: inline-block;
+	padding: 8px 4px;
+	border-radius: 0px;	
+	color: #000;
+	margin: 0px 12px;
+}
+.nav a:hover, .nav a.active {
+	border-bottom: 3px solid #459ce6;
+}
+.change-city {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	padding: 7px 10px;
+	color: #797979;
+}
+.content {
+	width: 1200px;
+	padding: 60px 0;
+}
+.slide-img {
+	width: 100%;
+	height: 700px;
+}
+.banner1 {
+	background: url('../image/banner1.jpg') no-repeat center;
+}
+.banner2 {
+	background: url('../image/banner2.jpg') no-repeat center;
+}
+.banner3 {
+	background: url('../image/banner3.jpg') no-repeat center;
+}
+.reserves {
+	width: 1200px;
+	height: 300px;
+	background: url('../image/reserve.jpg') no-repeat;
+	-webkit-box-shadow: 0px 4px 8px #999; 
+	-moz-box-shadow: 0px 4px 8px #999;
+	box-shadow: 0px 4px 8px #999;
+}
+.reserves h4 {
+	font-size:22px;
+}
+.reserves td {
+	width: 400px;
+	padding: 20px;
+}
+.reserves p {
+	font-size: 14px;
+	color: #666;
+	margin: 0;
+}
+.icon-arrow {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	margin: 5px 0 20px;
+}
+.icon-arrow-l {
+	background: url('../image/web-icon.png') -20px -185px;
+}
+.icon-arrow-r {
+	background: url('../image/web-icon.png') -47px -185px;
+}
+.compare {
+	border: 1px solid #dcdcdc;
+}
+.compare thead td {
+	font-size: 28px;
+	padding: 5px;
+}
+.compare td {
+	width: 540px;
+	height: 70px;
+	border: 1px dashed #dcdcdc;
+}
+.icon-vs {
+	display: inline-block;
+	width: 94px;
+	height: 94px;
+	top: 236px;
+	left: 552px;
+	background: url('../image/web-icon.png') -321px -102px;
+}
+.bg {
+	width: 100%;
+	height: 600px;
+}
+.plat-bg {
+	background: url('../image/plat-bg.jpg') no-repeat center;
+}
+.know-more {
+	display: inline-block;
+	padding: 10px 30px;
+	background: #fff;
+	color: #459ce6;
+	border-radius: 5px;
+}
+.know-more:hover {
+	background: #459ce6;
+	color: #fff;
+}
+.features li {
+	display: inline-block;
+	float: left;
+	margin: 0 30px 50px;
+}
+.features div {
+	width: 336px;
+	height: 220px;
+	padding-top: 30px;
+	border: 1px solid #eee;
+}
+.features div:hover {
+	border: 1px solid #459ce6;
+}
+.number {
+	display: inline-block;
+	width: 30px;
+	height: 50px;
+}
+.num1 {
+	background: url('../image/web-icon.png') -130px -215px;
+}
+.num2 {
+	background: url('../image/web-icon.png') -172px -214px;
+}
+.num3 {
+	background: url('../image/web-icon.png') -221px -214px;
+}
+.num4 {
+	background: url('../image/web-icon.png') -268px -214px;
+}
+.num5 {
+	background: url('../image/web-icon.png') -316px -214px;
+}
+.num6 {
+	background: url('../image/web-icon.png') -362px -214px;
+}
+.safe-bg {
+	background: url('../image/safe-bg.jpg') no-repeat center;
+}
+.title-l {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	width: 44px;
+	height: 56px;
+	background: url('../image/web-icon.png') -21px -216px;
+}
+.title-r {
+	display: inline-block;
+	margin-left: 20px;
+	width: 28px;
+	height: 30px;
+	background: url('../image/web-icon.png') -87px -227px;
+}
+.report {
+	width: 120px;
+	height: 46px;
+	line-height: 46px;
+	background: #dadada;
+	border-radius: 5px;
+	margin-bottom: 35px;
+}
+.city-bg {
+	width: 100%;
+	height: 760px;
+	background: url('../image/city-bg.png') no-repeat center;
+}
+.ayb-logo {
+	width: 212px;
+	height: 62px;
+	margin-right: 85px;
+	background: url('../image/web-icon.png') -20px -20px;
+}
+.yjz-logo {
+	width: 70px;
+	height: 80px;
+	background: url('../image/web-icon.png') -232px -102px;
+}
+.gjb-logo {
+	width: 168px;
+	height: 44px;
+	margin-right: 50px;
+	background: url('../image/web-icon.png') -252px -30px;
+}
+.whpx-logo {
+	width: 190px;
+	height: 66px;
+	background: url('../image/web-icon.png') -20px -102px;
+}
+.footer {
+	background: #35353c;
+}
+.footer p {
+	margin:0px 0px 10px 0px;
+}
+.hjl-logo-white {
+	width: 142px;
+	height: 36px;
+	background: url('../image/web-icon.png') -20px -283px;
+}
+.hjl-info li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 55px 23px;
+}
+.hjl-info a {
+	color: #999;
+}
+.hjl-info a:hover {
+	color: #fff;
+}
+.hjl-info p {
+	line-height: 16px;
+}
+.side-bar {
+	top: 508px;
+	right: 0;
+	z-index: 2;
+}
+.wechat {
+	width: 54px;
+	height: 54px;
+	background: url('../image/wechat-icon.png') no-repeat;
+}
+.wx-qrcode {
+	display: none;
+	width: 70%;
+	left: 15%;
+	top: 25%;
+	z-index: 100;
+}
+.wx-qrcode div {
+	width: 300px;
+	height: 410px;
+	background: rgba(0,0,0,0.8);
+}

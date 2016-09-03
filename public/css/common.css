@@ -1,0 +1,138 @@
+body {	
+	font-family: 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+}
+  
+/* 居中 */
+.container {
+	margin: 0 auto;
+}
+
+/* 位置 */
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.fixed {
+	position: fixed;
+}
+
+/* 隐藏 */
+.hidden {
+	overflow: hidden;
+}
+
+/* 浮动 */
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+/* 清除浮动 */
+.clearfix {
+	clear: both;
+}
+
+/* 行内块级元素 */
+.inline-block {
+	display: inline-block;
+}
+
+/* 内容位置 */
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.ver-middle {
+	vertical-align: middle;
+}
+
+/* 标签 */
+body {
+    font-family: 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    color: #333;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	text-indent: -9999px;
+	margin: 0;
+}
+h2 {
+	font-weight: 100;
+	font-size: 40px;
+	margin: 0;
+}
+h3 {
+	font-size: 28px;
+	margin: 20px 0;
+}
+h4 {
+	font-weight: 100;
+	margin: 0;
+}
+h5 {
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+
+/* 颜色 */
+.black {
+	color: #000;
+}
+.white {
+	color: #fff;
+}
+.grey {
+	color: #333;
+}
+.mid-grey {
+	color: #666;
+}
+.light-grey {
+	color: #999;
+}
+.blue {
+	color: #459ce6;
+}
+.light-blue {
+	color: #009ce0;
+}
+
+/* 字号 */
+.font12 {
+	font-size: 12px;
+}
+.font14 {
+	font-size: 14px;
+}
+.font16 {
+	font-size: 16px;
+}
+.font18 {
+	font-size: 18px;
+}
+.font20 {
+	font-size: 20px;
+}
+.font24 {
+	font-size: 24px;
+}
+.swiper-pagination-bullet {
+	width: 14px;
+	height: 14px;
+	opacity: 1;
+	background: #fff;
+}
+.swiper-pagination-bullet-active {
+	background: #009ce0;
+}

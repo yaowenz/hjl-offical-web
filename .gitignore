@@ -1,0 +1,7 @@
+.project
+.buildpath
+phpunit.xml
+.settings/
+/vendor/
+logs/
+templates/_cache/
