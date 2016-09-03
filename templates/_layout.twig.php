@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/page.css">
+        <link rel="shortcut icon" href="favicon.png" />        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
