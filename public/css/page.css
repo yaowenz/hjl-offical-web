@@ -79,25 +79,58 @@
 .icon-arrow-r {
 	background: url('../image/web-icon.png') -47px -185px;
 }
+// .compare {
+// 	border: 1px solid #dcdcdc;
+// }
 .compare {
-	border: 1px solid #dcdcdc;
+	margin-top: 100px;
+}
+.compare td {
+	border-bottom: 1px dashed #dcdcdc;
 }
 .compare thead td {
 	font-size: 28px;
 	padding: 5px;
 }
-.compare td {
-	width: 540px;
+.compare tbody td:first-child {
+	width: 430px;
 	height: 70px;
-	border: 1px dashed #dcdcdc;
+}
+.compare tbody td:last-child {
+	width: 430px;
+	height: 70px;
 }
 .icon-vs {
 	display: inline-block;
-	width: 94px;
-	height: 94px;
-	top: 236px;
-	left: 552px;
-	background: url('../image/web-icon.png') -321px -102px;
+	width: 224px;
+	height: 148px;
+	top: 64px;
+	left: 482px;
+	background: url('../image/web-icon.png') -20px -389px;
+}
+.compare-number {
+	display: inline-block;
+	width: 28px;
+	height: 30px;
+	background: url('../image/web-icon.png');
+}
+.cnum1 {
+	background-position: -20px -338px;
+}
+.cnum2 {
+	background-position: -56px -338px;
+}
+.cnum3 {
+	background-position: -94px -340px;
+}
+.cnum4 {
+	background-position: -130px -338px;
+}
+.cnum5 {
+	background-position: -168px -338px;
+}
+.cnum6 {
+	background-position: -204px -340px;
 }
 .bg {
 	width: 100%;
@@ -109,18 +142,18 @@
 .know-more {
 	display: inline-block;
 	padding: 10px 30px;
-	background: #fff;
-	color: #459ce6;
+	background: #459ce6;
+	color: #fff;
 	border-radius: 5px;
 }
 .know-more:hover {
-	background: #459ce6;
-	color: #fff;
+	background: #fff;
+	color: #459ce6;
 }
 .features li {
 	display: inline-block;
-	float: left;
-	margin: 0 30px 50px;
+	margin: 0 28px 50px;
+	vertical-align: middle;
 }
 .features div {
 	width: 336px;
@@ -135,27 +168,34 @@
 	display: inline-block;
 	width: 30px;
 	height: 50px;
+	background: url('../image/web-icon.png');
 }
 .num1 {
-	background: url('../image/web-icon.png') -130px -215px;
+	background-position: -130px -215px;
 }
 .num2 {
-	background: url('../image/web-icon.png') -172px -214px;
+	background-position: -172px -214px;
 }
 .num3 {
-	background: url('../image/web-icon.png') -221px -214px;
+	background-position: -221px -214px;
 }
 .num4 {
-	background: url('../image/web-icon.png') -268px -214px;
+	background-position: -268px -214px;
 }
 .num5 {
-	background: url('../image/web-icon.png') -316px -214px;
+	background-position: -316px -214px;
 }
 .num6 {
-	background: url('../image/web-icon.png') -362px -214px;
+	background-position: -362px -214px;
 }
 .safe-bg {
 	background: url('../image/safe-bg.jpg') no-repeat center;
+}
+.steal {
+	display: inline-block;
+	width: 154px;
+	height: 154px;
+	background: url('../image/web-icon.png') -252px -318px;
 }
 .title-l {
 	display: inline-block;

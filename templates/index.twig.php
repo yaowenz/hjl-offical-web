@@ -23,10 +23,10 @@
 			<a class="active" href="#">首页</a>    
 		</li>
 		<li>
-			<a href="#">家政故事</a>    
+			<a href="#">门店服务</a>    
 		</li>
 		<li>
-			<a href="#">商家服务</a>    
+			<a href="#">家政故事</a>    
 		</li>
 		<li>
 			<a href="#">资源合作</a>    
@@ -73,7 +73,7 @@
 <!--需求分类start-->
 <div class="content container">
 	<div class="text-center">
-		<h2>无人干预快速成交</h2>
+		<h2>找好阿姨不再是难事</h2>
 		<p class="light-blue font18">家政生意不再难做 无人干预快速成交</p>
 	</div>
 	<br>
@@ -121,34 +121,44 @@
 	</table>
 	<div class="relative" style="padding: 60px 60px 0">
 		<i class="icon-vs absolute"></i>
-		<table class="compare text-center">
+		<table class="compare">
 			<thead>
 				<tr>
-					<td>传统家政平台</td>
-					<td>好家联平台</td>
+					<td width="540" class="text-right">传统家政&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td width="0"></td>
+					<td width="540">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“好家联”在线平台</td>
 				</tr>
 			</thead>
-			<tbody class="mid-grey">
+			<tbody>
 				<tr>
-					<td>仅满足顾客‘单方’提出选人需求</td>
-					<td>顾客及家政员双方需求配对</td>
+					<td class="text-right orange">线下实体店耗时耗力，可选择阿姨有限</td>
+					<td class="text-center" width="220"><i class="compare-number cnum1"></i></td>
+					<td class="light-blue">在线海量选阿姨，手机端签约支付</td>
 				</tr>
 				<tr>
-					<td>优质阿姨在线，线下发配闲置阿姨</td>
-					<td>真实阿姨在线，所选即所得<br>
-					<span class="font12">（阿姨确认能上单，方能在线搜索）</span></td>
+					<td class="text-right orange">看中的阿姨总约不到？</td>
+					<td class="text-center"><i class="compare-number cnum2"></i></td>
+					<td class="light-blue">真实阿姨在线，实时反馈</td>
 				</tr>
 				<tr>
-					<td>网上下单、人工对接</td>
-					<td>全智能化精准匹配  无人工干预</td>
+					<td class="text-right orange">仅从顾客单方需求找家政员，雇佣更换频繁</td>
+					<td class="text-center"><i class="compare-number cnum3"></i></td>
+					<td class="light-blue">雇佣双方需求大数据配对，找到最合适自己的家政员</td>
 				</tr>
 				<tr>
-					<td>传统在线简历照片</td>
-					<td>颠覆上门面试，45″在线视屏选人</td>
+					<td class="text-right orange">直接上岗</td>
+					<td class="text-center"><i class="compare-number cnum4"></i></td>
+					<td class="light-blue">匹配技能自动生成纸质承诺书上岗，服务如有落差有据可依保障顾客利益</td>
 				</tr>
 				<tr>
-					<td>阿姨想来就来，说走就走</td>
-					<td>智能换人调单，杜绝服务空窗期</td>
+					<td class="text-right orange">照片在线选人，另排时间不断上门面试</td>
+					<td class="text-center"><i class="compare-number cnum5"></i></td>
+					<td class="light-blue">45″在线视频选人，手机端看人选人</td>
+				</tr>
+				<tr>
+					<td class="text-right orange">阿姨突然“走人”，服务遭遇“真空期”</td>
+					<td class="text-center"><i class="compare-number cnum6"></i></td>
+					<td class="light-blue">一键智能换人调单，后续服务无缝对接</td>
 				</tr>
 			<tbody>
 		</table>
@@ -161,7 +171,7 @@
 	<div class="content container clearfix">
 		<div class="fl" style="padding: 60px 0">
 			<h2>三大平台支撑 家政生意不再难做</h2> 
-			<h3>Service details</h3>
+			<p class="font18 light-blue">Easy housekeeping business thourgh our 3 Sub-systems</p>
 			<p style="line-height: 36px; margin-top: 45px">
 			好家联是一个基于互联网技术的家政服务链一站式服务平台，致力于解决家政业<br>
 			管理运营粗放、工作效率低下、信息共享不足、资源融合有限等一系列的家政服<br>
@@ -182,41 +192,51 @@
 		<li>
 			<div>
 				<i class="number num1"></i>
-				<h3>提升业务成交量</h3>
-				<span class="mid-grey">有单子没阿姨？</span>
+				<h3>线上渠道拓宽</h3>
+				<span class="mid-grey">入驻就送”微店“</span>
 				<br>
-				<span class="mid-grey">有阿姨没单子？</span>
+				<span class="mid-grey">线上业务轻松接入</span>
 			</div>
 		</li>
 		<li>
 			<div>
 				<i class="number num2"></i>
-				<h3>全方位业务升级</h3>
-				<span class="mid-grey">帮助实现单店智能管理平台搭建，运营</span>
+				<h3>提升成交业务量</h3>
+				<span class="mid-grey">精准匹配</span>
+				<br>
+				<span class="mid-grey">成交签约率显著提升</span>
 			</div>
 		</li>
 		<li>
 			<div>
 				<i class="number num3"></i>
 				<h3>提高管理能力</h3>
-				<span class="mid-grey">客户、阿姨动态随时掌握</span>
+				<span class="mid-grey">顾客、家政员服务动态实时掌握</span>
+				<br>
+				<span class="mid-grey">规避飞单，丢单的现象</span>
 			</div>
 		</li>
 		<li style="margin-bottom: 0">
 			<div>
 				<i class="number num4"></i>
-				<h3>提升客户口碑</h3>
-				<span class="mid-grey">精准配对 双方满意</span>
+				<h3>赢得顾客口碑</h3>
+				<span class="mid-grey">智能选人、规范管理、售后监管，雇佣</span>
+				<br>
+				<span class="mid-grey">双方体验得到双重提升，客户接近0投诉</span>
 			</div>
 		</li>
 		<li style="margin-bottom: 0">
 			<div>
 				<i class="number num5"></i>
-				<h3>降低运营成本</h3>
-				<span class="mid-grey">免费线上找业务， 再无淡旺季之分</span>
+				<h3>信息安全保障</h3>
+				<span class="mid-grey">交易过程全智能无人工干预，隐私数据</span>
+				<br>
+				<span class="mid-grey">保密；保证业务量在安全、公平的环境</span>
+				<br>
+				<span class="mid-grey">下的持续增长</span>
 			</div>
 		</li>
-		<li style="margin-bottom: 0">
+		<!-- <li style="margin-bottom: 0">
 			<div>
 				<i class="number num6"></i>
 				<h3>公开透明、无人工干预</h3>
@@ -224,21 +244,20 @@
 				<br>
 				<span class="mid-grey">签约保障商家数据安全</span>
 			</div>
-		</li>
+		</li> -->
 	</ul>
 </div>
 <!--6个特点end-->
 
 <!--安全保障start-->
 <div class="bg safe-bg">
-	<div class="content container white text-center">
-		<h2>资源共享安全有保障 Goodbye to“偷单”“偷人” </h2> 
-		<br>
-		<p class="font18" style="letter-spacing: 2px">
-		B端看得为什么选择我们？需要先有个我们的工作环，B端工作环，或者该交易模式<br>首先知道我们做什么。然后这段必须有主题：家政生意不再难做，无人工干预快速<br>成交
+	<div class="content container white text-center" style="padding-top: 10px">
+		<p class="steal" style="margin-bottom: 0"></p>
+		<h2>资源共享安全有保障</h2> 
+		<p class="font22" style="letter-spacing: 2px; font-weight: 100">
+		我们打破传统家政的“信任壁垒”，全系统实现全智能自动化<br>交易让各家政公司在保障安全、公平的条件下快速提高成交量
 		</p>
-		<br>
-		<img src="{{baseUrl}}/image/safe-icon.png">
+		<img src="{{baseUrl}}/image/safe-icon.png" style="width: 46%">
 	</div>
 </div>
 <!--安全保障end-->
