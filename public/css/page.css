@@ -294,3 +294,21 @@
 	height: 410px;
 	background: rgba(0,0,0,0.8);
 }
+.up {
+	display: none;
+	right: 100px;
+	bottom: 360px;
+}
+.up:hover .rocket {
+	cursor: pointer;
+	background: url('../image/web-icon.png') -105px -557px;
+}
+.up:hover p {
+	cursor: pointer;
+	color: #009ce0;
+}
+.rocket {
+	width: 65px;
+	height: 65px;
+	background: url('../image/web-icon.png') -20px -557px;
+}

@@ -291,6 +291,13 @@
 </div>
 <!--家政平台end-->
 
+<!--回到顶部start-->
+<div class="up fixed">
+	<div class="rocket"></div>
+	<p class="light-grey">返回顶部</p>
+</div>
+<!--回到顶部end-->
+
 <!--页脚start-->
 <div class="footer white">
 	<div class="content container clearfix">

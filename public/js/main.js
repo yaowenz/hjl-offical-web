@@ -26,6 +26,18 @@ $(document).ready(function(){
         $('.wx-qrcode').fadeOut();
     })
 
+    //回到顶部
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 3000){
+            $('.up').fadeIn();
+        } else{
+            $('.up').fadeOut();
+        }
+    })
+    $('.up').click(function(){
+        $('body,html').animate({scrollTop:0},1000);
+    })
+
 
 
 
