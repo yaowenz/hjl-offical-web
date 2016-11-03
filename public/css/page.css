@@ -4,9 +4,10 @@
 }
 .hjl-logo {
 	display: inline-block;
+	margin-top: -10px;
 	width: 240px;
-	height: 58px;
-	background: url("../image/hjl-logo.png") no-repeat;
+	height: 90px;
+	background: url("../image/hjl-logo-v2.png") no-repeat;
 }
 .nav li {
 	font-size:20px;
