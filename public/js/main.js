@@ -20,7 +20,7 @@ $(document).ready(function(){
     })
 
     //侧边栏
-    $('.side-bar').hover(function(){
+    $('.wechat').hover(function(){
         $('.wx-qrcode').fadeIn();
     },function(){
         $('.wx-qrcode').fadeOut();
@@ -28,13 +28,13 @@ $(document).ready(function(){
 
     //回到顶部
     $(window).scroll(function(){
-        if($(window).scrollTop() > 3000){
-            $('.up').fadeIn();
+        if($(window).scrollTop() > 800){
+            $('.rocket').fadeIn();
         } else{
-            $('.up').fadeOut();
+            $('.rocket').fadeOut();
         }
     })
-    $('.up').click(function(){
+    $('.rocket').click(function(){
         $('body,html').animate({scrollTop:0},1000);
     })
 

@@ -2,7 +2,8 @@
 {% block content %}
 <!--侧边栏start-->
 <div class="side-bar fixed">
-	<i class="wechat inline-block"></i>
+	<div class="wechat"></div>
+	<div class="rocket" title="回到顶部"></div>
 </div>
 <div class="wx-qrcode fixed text-center">
 	<div class="container">
@@ -290,13 +291,6 @@
 	</div>
 </div>
 <!--家政平台end-->
-
-<!--回到顶部start-->
-<div class="up fixed">
-	<div class="rocket"></div>
-	<p class="light-grey">返回顶部</p>
-</div>
-<!--回到顶部end-->
 
 <!--页脚start-->
 <div class="footer white">
