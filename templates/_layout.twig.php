@@ -7,7 +7,8 @@
         <meta name="description" content="好家联">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+        <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+        <link rel="stylesheet" href="css/custombox.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/page.css">
@@ -15,7 +16,8 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
-        <script src="js/vendor/swiper-3.3.1.jquery.min.js"></script>
+        <script src="js/vendor/swiper-3.4.0.jquery.min.js"></script>
+        <script src="js/vendor/custombox.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>	       

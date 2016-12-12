@@ -1,3 +1,4 @@
+/* 主体 */
 body {	
 	font-family: 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
 }
@@ -5,22 +6,6 @@ body {
 /* 居中 */
 .container {
 	margin: 0 auto;
-}
-
-/* 位置 */
-.relative {
-	position: relative;
-}
-.absolute {
-	position: absolute;
-}
-.fixed {
-	position: fixed;
-}
-
-/* 隐藏 */
-.hidden {
-	overflow: hidden;
 }
 
 /* 浮动 */
@@ -36,9 +21,30 @@ body {
 	clear: both;
 }
 
-/* 行内块级元素 */
-.inline-block {
-	display: inline-block;
+/* 标题 */
+h1 {
+	text-indent: -9999px;
+	margin: 0;
+}
+h2 {
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 32px;
+}
+h3 {
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 26px;
+}
+
+/* 链接 */
+a {
+	text-decoration: none;
+}
+
+/* 间隔 */
+em {
+	padding: 0 22px 0 26px;
 }
 
 /* 内容位置 */
@@ -53,32 +59,6 @@ body {
 }
 .ver-middle {
 	vertical-align: middle;
-}
-
-/* 标签 */
-a {
-	text-decoration: none;
-}
-h1 {
-	text-indent: -9999px;
-	margin: 0;
-}
-h2 {
-	font-weight: 100;
-	font-size: 40px;
-	margin: 0;
-}
-h3 {
-	font-size: 28px;
-	margin: 20px 0;
-}
-h4 {
-	font-weight: 100;
-	margin: 0;
-}
-h5 {
-	font-size: 18px;
-	margin: 0 0 20px;
 }
 
 /* 颜色 */
@@ -97,14 +77,14 @@ h5 {
 .light-grey {
 	color: #999;
 }
+.green {
+	color: #17BA7B;
+}
 .orange {
-	color: #F7C48C;
+	color: #F49E21;
 }
-.blue {
-	color: #459ce6;
-}
-.light-blue {
-	color: #009ce0;
+.lighter-grey {
+	color: #ccc;
 }
 
 /* 字号 */
@@ -129,12 +109,50 @@ h5 {
 .font24 {
 	font-size: 24px;
 }
+.font28 {
+	font-size: 28px;
+}
+.font32 {
+	font-size: 32px;
+}
+
+/* 字形 */
+.bold {
+	font-weight: bold;
+}
+
+/* 位置 */
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.fixed {
+	position: fixed;
+}
+
+/* 隐藏 */
+.hid {
+	display: none;
+}
+
+/* 行内块级元素 */
+.inline-block {
+	display: inline-block;
+}
+
+/* 分页 */
+.swiper-pagination-bullets {
+	bottom: 42px!important;
+}
 .swiper-pagination-bullet {
-	width: 14px;
-	height: 14px;
+	margin: 0 8px!important;
+	width: 19px;
+	height: 19px;
 	opacity: 1;
-	background: #fff;
+	background: #CAC8C8;
 }
 .swiper-pagination-bullet-active {
-	background: #009ce0;
+	background: #17BA7B;
 }
