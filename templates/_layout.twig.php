@@ -36,5 +36,13 @@
     <![endif]-->
 	{% block content %}
 	{% endblock %}	
+    <!--返回顶部-->
+    <div class="to-top fixed text-center">
+        <i class="icon icon-rocket"></i>
+        <div class="green" style="margin-top: 5px">返回顶部</div>
+    </div>
+
+    {{ include('foot.twig.php') }}
+    
 	</body>
 </html>

@@ -24,22 +24,19 @@
 	background-position: -169px -549px;
 }
 .hjl-logo {
-	display: inline-block;
-	width: 222px;
-	height: 162px;
-	background: url("../image/web-icon.png") -20px -20px;
+	width: 66%;
 }
 .nav {
-	margin-top: 52px;
+	// margin-top: 52px;
 	margin-right: 24px;
 }
-.nav li {
+.nav a {
 	display: inline-block;
 	float: left;
 	margin-left: 12px;
-	font-size:18px;
+	font-size: 18px;
 }
-.group-bg .nav a {
+.join-bg .nav a {
 	color: #222;
 }
 .nav a {
@@ -48,18 +45,17 @@
 	border-radius: 50px;
 	color: #fff;
 }
-.group-bg .nav .active {
+.join-bg .nav .active {
 	color: #fff;
 }
 .nav .active {
 	background: #17BA7B;
 }
-.group-bg .tel {
+.join-bg .tel {
 	color: #222;
 }
 .tel {
-	margin-top: 56px;
-	margin-right: 14px;
+	margin-right: 7px;
 }
 .icon-tel {
 	display: inline-block;
@@ -69,7 +65,7 @@
 	background-position: -262px -20px;
 }
 .area {
-	margin-top: 60px;
+	margin-top: 10px;
 }
 .city {
 	color: #17BA7B;
@@ -409,16 +405,16 @@
 }
 .ad-bg {
 	padding-top: 1px;
-	height: 180px;
 }
 .orange-bg {
+	height: 120px;
+	line-height: 120px;
 	background: url('../image/orange-bg.jpg') no-repeat center;
 }
 
 
 .join-bg {
-	height: 520px;
-	background: url("../image/join-bg.jpg") no-repeat center;
+	background: url('../image/join-bg.jpg') no-repeat top center;
 }
 .cooperate {
 	margin-top: 60px;
@@ -444,12 +440,15 @@
 	border: 2px solid #eee;
 }
 .green-bg {
+	height: 180px;
+	line-height: 180px;
 	background: url('../image/green-bg.jpg') no-repeat center;
 }
 
 
-.group-bg {
-	background: url('../image/group-bg.jpg') no-repeat top center;
+.about-bg {
+	height: 520px;
+	background: url("../image/about-bg.jpg") no-repeat center;
 }
 .title {
 	font-size: 46px;
@@ -459,7 +458,7 @@
 	margin-top: 68px;
 	line-height: 46px;
 }
-.about-content {
+.join-content {
 	background: #fff;
 	margin-top: 206px;
 }

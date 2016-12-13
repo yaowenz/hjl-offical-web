@@ -11,12 +11,23 @@ $(document).ready(function(){
     });
     
     //导航
-    // $('.nav li:first-child a').addClass('active');
-    $('.nav a').hover(function(){
-        $(this).addClass('active');
-    }, function(){
-        $(this).removeClass('active');
-    });
+    $('.index-bg .index').addClass('active current');
+    $('.ayi-bg .order').addClass('active current');
+    $('.join-bg .branches').addClass('active current');
+    $('.about-bg .about').addClass('active current');
+    
+    $('.nav a').hover(function () {
+        $(this).addClass('active').siblings().removeClass('active')
+    }, function () {
+        $(this).hasClass('current') || $(this).removeClass('active')
+        if ($(this).parents().is('.nav')) {
+            return
+        }
+        $('.nav a.current').addClass('active')
+    })
+     $('.nav').hover(function(){}, function () {
+            $('.nav a.current').addClass('active')
+     });
 
     //在线业务窗口
     $('.business-item').hover(function(){
@@ -44,6 +55,7 @@ $(document).ready(function(){
     //在线业务
     var swiperBusiness = new Swiper(".swiper-container.swiper-business",{
         pagination: '.swiper-pagination',
+        // uniqueNavElements :false,
         paginationClickable: true,
         loop: true,
         autoplay: 2000,
@@ -83,8 +95,6 @@ $(document).ready(function(){
         $(this).find('.shop i').addClass('shop-logo').removeClass('shop-qr');
     });
     
-    
-
     //侧边栏
     // $('.wechat').hover(function(){
     //     $('.wx-qrcode').fadeIn();

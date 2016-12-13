@@ -1,3 +1,10 @@
+{% extends '_layout.twig.php' %}
+{% block content %}
+
+<!--banner-->
+<div class="head about-bg">
+	{{ include('head.twig.php') }}
+</div>
 <!--商务合作-->
 <div class="wrapper container" style="margin-bottom: 112px">
     <div class="content">
@@ -21,10 +28,9 @@
 </div>
 
 <!--合作广告-->
-<div class="ad-bg green-bg">
-	<div class="clearfix white" style="width: 1024px; margin: 16px auto 10px auto">
-		<img src="../public/image/computer.png">
-		<img src="../public/image/tel.png" style="margin-left: 132px">
-		<div class="fr text-center"><img style="width: 124px; height: 124px" src="../public/image/hjl-qr.png"><div style="margin-top: 10px">扫描二维码 体验线上微店</div></div>
-	</div>
+<div class="ad-bg green-bg text-center">
+	<img src="../public/image/computer.png">
+	<img src="../public/image/tel.png" style="margin-left: 132px">
 </div>
+
+{% endblock %}

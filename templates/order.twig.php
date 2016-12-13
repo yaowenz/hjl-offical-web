@@ -1,3 +1,11 @@
+{% extends '_layout.twig.php' %}
+{% block content %}
+
+<!--banner-->
+<div class="head ayi-bg">
+	{{ include('head.twig.php') }}
+</div>
+
 <!--平台特色-->
 <div class="wrapper container">
     <div class="content">
@@ -331,9 +339,8 @@
 </div>
 
 <!--广告-->
-<div class="ad-bg orange-bg">
-	<div class="clearfix" style="width: 720px; margin: 28px auto; line-height: 80px">
-		<span class="white" style="font-size: 44px">扫描二维码 体验线上微店</span>
-		<div class="fr"><img style="width: 124px; height: 124px" src="../public/image/hjl-qr.png"></div>
-	</div>
+<div class="ad-bg orange-bg text-center">
+	<span class="white" style="font-size: 44px">扫描二维码 体验线上微店</span>
 </div>
+
+{% endblock %}
