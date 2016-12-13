@@ -20,6 +20,7 @@
         <script src="js/vendor/custombox.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        {% if _APP_ENV == 'production' %}
         <script>	       
 			var _hmt = _hmt || [];
 			(function() {
@@ -29,6 +30,7 @@
 			  s.parentNode.insertBefore(hm, s);
 			})();        	
         </script>
+        {% endif %}
     </head>
     <body>
     <!--[if lt IE 8]>
@@ -41,8 +43,6 @@
         <i class="icon icon-rocket"></i>
         <div class="green" style="margin-top: 5px">返回顶部</div>
     </div>
-
-    {{ include('foot.twig.php') }}
-    
+    {{ include('foot.twig.php') }}    
 	</body>
 </html>

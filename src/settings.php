@@ -15,5 +15,8 @@ return [
             'path' => __DIR__ . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
+    
+    	// load form .env
+    	'app_env' => getenv('APP_ENV'),
     ],
 ];

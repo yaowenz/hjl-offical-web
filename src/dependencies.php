@@ -1,6 +1,5 @@
 <?php
 // DIC configuration
-
 $container = $app->getContainer();
 
 // view renderer
@@ -28,5 +27,6 @@ $container['view'] = function ($container) {
 
 	$view->addExtension(new \Slim\Views\TwigExtension($container['router'], $container['request']->getUri()));
 	$view->offsetSet('baseUrl', $container['request']->getUri()->getBaseUrl());
+	$view->offsetSet('_APP_ENV', $container->settings['app_env']);	
 	return $view;
 };
