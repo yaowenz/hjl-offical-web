@@ -14,8 +14,8 @@
 .to-top {
 	display: none;
 	cursor: pointer;
-	bottom: 440px;
-	right: 5%;
+	bottom: 20px;
+	right: 20px;
 }
 .icon-rocket {
 	display: inline-block;
@@ -25,10 +25,6 @@
 }
 .hjl-logo {
 	width: 66%;
-}
-.nav {
-	// margin-top: 52px;
-	margin-right: 24px;
 }
 .nav a {
 	display: inline-block;
@@ -55,14 +51,18 @@
 	color: #222;
 }
 .tel {
-	margin-right: 7px;
+	margin-right: 10px;
 }
 .icon-tel {
 	display: inline-block;
-	margin-right: 12px;
-	width: 21px;
-	height: 21px;
-	background-position: -262px -20px;
+	margin-right: 6px;
+	width: 15px;
+	height: 20px;
+	background-position: -175px -10px;
+	background-size:400px 533px;	
+	position:absolute;
+	left:205px;
+	top:1px;
 }
 .area {
 	margin-top: 10px;
@@ -188,7 +188,7 @@
 }
 .foot {
 	// margin-top: 50px;
-	height: 252px;
+	height: 200px;
 	background: #35353C;
 }
 .join-modal {

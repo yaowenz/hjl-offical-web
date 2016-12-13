@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>好家联</title>
-        <meta name="description" content="好家联">
+        <title>好家联 | 好阿姨，好服务</title>
+        <meta name="description" content="好家联,找阿姨,家政服务">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
