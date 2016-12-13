@@ -19,7 +19,7 @@
 					<p class="light-grey text-center" style="margin: 0 0 14px 0; font-size: 13px">Guarantee</p>
 					<div class="divider"><div class="divider-blue container"></div></div>
 					<div class="text-center" style="margin-top: 58px">
-						<img src="../public/image/match.png">
+						<img src="{{baseUrl}}/image/match.png">
 						<div class="mid-grey font20" style="margin-bottom: 8px">智能匹配</div>
 						<div class="mid-grey font20">迅速将剩余价值转化为收益</div>
 						<button class="apply-button">申请入驻</button>
@@ -236,8 +236,8 @@
 
 	<!--合作广告-->
 	<div class="ad-bg green-bg text-center">
-		<img src="../public/image/computer.png">
-		<img src="../public/image/tel.png" style="margin-left: 132px">
+		<img src="{{baseUrl}}/image/computer.png">
+		<img src="{{baseUrl}}/image/tel.png" style="margin-left: 132px">
 	</div>
 </div>
 

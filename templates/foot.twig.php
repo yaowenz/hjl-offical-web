@@ -13,7 +13,7 @@
 				<div style="margin: 32px 0 12px 0">好家联电子科技（上海）有限公司</div>
 				<div>沪ICP备09066589号-1</div>
 			</div>
-			<div class="fr"><img src="../public/image/hjl-qr.png"></div>
+			<div class="fr"><img src="{{baseUrl}}/image/hjl-qr.png"></div>
 		</div>
 	</div>
 </div>

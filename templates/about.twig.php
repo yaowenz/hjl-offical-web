@@ -22,15 +22,15 @@
 			</div>
 		</div>
 		<div class="map text-center" style="padding: 10px">
-			<img src="../public/image/map.jpg">
+			<img src="{{baseUrl}}/image/map.jpg">
 		</div>
 	</div>
 </div>
 
 <!--合作广告-->
 <div class="ad-bg green-bg text-center">
-	<img src="../public/image/computer.png">
-	<img src="../public/image/tel.png" style="margin-left: 132px">
+	<img src="{{baseUrl}}/image/computer.png">
+	<img src="{{baseUrl}}/image/tel.png" style="margin-left: 132px">
 </div>
 
 {% endblock %}

@@ -2,7 +2,7 @@
 <div class="wrapper container clearfix">
 	<div class="logo fl">
 		<!-- <div class="hjl-logo"></div> -->
-		<img class="hjl-logo" src="../public/image/hjl-logo-green.png">
+		<img class="hjl-logo" src="{{baseUrl}}/image/hjl-logo-green.png">
 		<h1 class="fr">好家联</h1>
 	</div>
 	<div class="fr" style="margin-top: 45px">
