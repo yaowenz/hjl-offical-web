@@ -507,7 +507,7 @@
 				<div class="light-grey">线上业务轻松接入</div>
 			</li>
 		</ul>
-		<button class="join-button" style="margin-top: 35px">我要入驻</button>
+		<a href="{{ path_for('branches') }}"><button class="join-button" style="margin-top: 35px">我要入驻</button></a>
 	</div>
 </div>
 

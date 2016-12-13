@@ -22,7 +22,7 @@
 						<img src="{{baseUrl}}/image/match.png">
 						<div class="mid-grey font20" style="margin-bottom: 8px">智能匹配</div>
 						<div class="mid-grey font20">迅速将剩余价值转化为收益</div>
-						<button class="apply-button">申请入驻</button>
+						<a href="{{ path_for('about') }}"><button class="apply-button">申请入驻</button></a>
 						<ul class="apply clearfix" style="margin-top: 50px">
 							<li>
 								<div style="height: 78px"><i class="icon icon-join-1"></i></div>

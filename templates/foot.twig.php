@@ -2,10 +2,10 @@
 <div class="foot">
 	<div class="container" style="width: 686px">
 		<div class="text-center light-grey font22" style="padding-top: 40px">
-			<a class="lighter-grey" href="#">首页</a><em>/</em>
-			<a class="lighter-grey" href="#">找好阿姨</a><em>/</em>
-			<a class="lighter-grey" href="#">合作入驻</a><em>/</em>
-			<a class="lighter-grey" href="#">关于我们</a><em>/</em>
+			<a class="lighter-grey" href="{{ path_for('index') }}">首页</a><em>/</em>
+			<a class="lighter-grey" href="{{ path_for('order') }}">找好阿姨</a><em>/</em>
+			<a class="lighter-grey" href="{{ path_for('branches') }}">合作入驻</a><em>/</em>
+			<a class="lighter-grey" href="{{ path_for('about') }}">关于我们</a><em>/</em>
 			<a class="lighter-grey" href="#">400-823-6199</a>
 		</div>
 		<div class="light-grey font18" style="margin-top: 20px">
