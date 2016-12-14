@@ -1,3 +1,5 @@
+{% set pageTitle = '门店入驻' %}
+
 {% extends '_layout.twig.php' %}
 {% block content %}
 

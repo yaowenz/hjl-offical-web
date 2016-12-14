@@ -1,3 +1,5 @@
+{% set pageTitle = '关于我们' %}
+
 {% extends '_layout.twig.php' %}
 {% block content %}
 
