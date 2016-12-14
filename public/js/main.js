@@ -82,7 +82,7 @@ $(document).ready(function(){
     });
 
     //在线选阿姨
-    var swiperSelect = new Swiper(".swiper-container.ayi-select",{
+    var swiperSelect = new Swiper(".swiper-container.shop-select",{
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
         // autoplayDisableOnInteraction: false,

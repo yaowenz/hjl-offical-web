@@ -11,40 +11,40 @@
 <!--平台特色-->
 <div class="wrapper container">
     <div class="content">
-    	<h3 class="text-center" style="margin-bottom: 0">在线业务</h3>
-		<p class="light-grey text-center" style="margin: 0 0 14px 0; font-size: 13px">Guarantee</p>
-		<div class="divider"><div class="divider-blue container"></div></div>
+    	<h3 class="text-center">平台特色</h3>
+		<div class="sub-title light-grey text-center">Our Service</div>
+		<div class="divider"><div class="divider-green container"></div></div>
 		<ul class="feature">
 			<li class="text-center mid-grey font18">
 				<i class="icon icon-feature icon-feature-phone"></i>
-				<div style="margin: 22px 0 10px 0">真实阿姨在线海量选择</div>
-				<div>手机端签约支付</div>
+				<div style="margin: 22px 0 10px 0">海量真实阿姨在线</div>
+				<div>身份验证 真实可靠</div>
 			</li>
 			<li class="text-center mid-grey font18">
 				<i class="icon icon-feature icon-feature-video"></i>
-				<div style="margin: 22px 0 10px 0">45秒阿姨在线视频</div>
-				<div>手机端看人选人</div>
+				<div style="margin: 22px 0 10px 0">预录“小视频”简历</div>
+				<div>足不出户 手机面试</div>
 			</li>
 			<li class="text-center mid-grey font18">
 				<i class="icon icon-feature icon-feature-aim"></i>
-				<div style="margin: 22px 0 10px 0">一键智能换人调单</div>
-				<div>后续服务无缝对接</div>
+				<div style="margin: 22px 0 10px 0">双方需求大数据匹配</div>
+				<div>找到最适合自己的家政员</div>
 			</li>
 			<li class="text-center mid-grey font18">
 				<i class="icon icon-feature icon-feature-change"></i>
-				<div style="margin: 22px 0 10px 0">一键智能换人调单</div>
+				<div style="margin: 22px 0 10px 0">一键换人 定期评价</div>
 				<div>后续服务无缝对接</div>
 			</li>
 		</ul>
 	</div>
 </div>
 
-<!--在线选阿姨-->
+<!--身边门店-->
 <div class="wrapper container" style="margin-bottom: 50px">
 	<div class="content">
-		<h3 class="text-center" style="margin-bottom: 0">在线选阿姨</h3>
-		<p class="light-grey text-center" style="margin: 0 0 14px 0; font-size: 13px">Guarantee</p>
-		<div class="divider"><div class="divider-blue container"></div></div>
+		<h3 class="text-center">身边门店</h3>
+		<div class="sub-title light-grey text-center">Nearby breadhes</div>
+		<div class="divider"><div class="divider-green container"></div></div>
 		<div class="mid-grey" style="margin: 50px 0">
 			<select class="type-select" style="margin-right: 30px">
 				<option>上海市</option>
@@ -55,7 +55,7 @@
 				{% endfor %}
 			</select>
 		</div>
-		<div class="swiper-container ayi-select" style="height: 694px">
+		<div class="swiper-container shop-select" style="height: 694px">
 			<ul class="swiper-wrapper shop-list branch-list">
 			</ul>
 			<div class="icon swiper-button swiper-button-prev"></div>
