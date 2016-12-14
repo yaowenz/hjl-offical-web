@@ -29,7 +29,7 @@ $(document).ready(function(){
             $('.nav a.current').addClass('active')
      });
 
-    //在线业务窗口
+    //最新业务窗口
     $('.business-item').hover(function(){
         $(this).find('.business-item-check').slideDown();
     }, function(){
@@ -45,14 +45,14 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-    //在线阿姨
+    //推荐阿姨
     $('.worker-item').hover(function(){
-        $(this).addClass('shadow').find('.worker-item-check').slideDown();
+        $(this).addClass('shadow').find('.worker-item-check').addClass('shadow').slideDown();
     }, function(){
-        $(this).removeClass('shadow').find('.worker-item-check').slideUp();
+        $(this).removeClass('shadow').find('.worker-item-check').removeClass('shadow').slideUp();
     });
     
-    //在线业务
+    //最新业务
     var swiperBusiness = new Swiper(".swiper-container.swiper-business",{
         pagination: '.swiper-pagination',
         // uniqueNavElements :false,
@@ -67,7 +67,7 @@ $(document).ready(function(){
         swiperBusiness.startAutoplay();
     });
 
-    //在线阿姨
+    //推荐阿姨
     var swiperWorker = new Swiper(".swiper-container.swiper-worker",{
         pagination: '.swiper-pagination',
         paginationClickable: true,

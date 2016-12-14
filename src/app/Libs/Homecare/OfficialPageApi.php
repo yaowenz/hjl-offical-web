@@ -13,8 +13,8 @@ class OfficialPageApi
 
     public function getJobList()
     {
-        $perGroup = 4;
-        $params = ['offset' => 0, 'pagesize' => 12];
+        $perGroup = 6;
+        $params = ['offset' => 0, 'pagesize' => 18];
         $result = $this->api->getJobList($params);
         if ($this->checkResult($result)) {
             $jobs = $this->roundGroupList($result->data->rows, $perGroup);
@@ -31,8 +31,8 @@ class OfficialPageApi
 
     public function getWorkerList()
     {
-        $perGroup = 4;
-        $params = ['offset' => 0, 'pagesize' => 12];
+        $perGroup = 12;
+        $params = ['offset' => 0, 'pagesize' => 36];
         $result = $this->api->getWorkerList($params);
         if ($this->checkResult($result)) {
             $workers = $this->roundGroupList($result->data->rows, $perGroup);

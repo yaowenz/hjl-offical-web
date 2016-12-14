@@ -5,7 +5,7 @@
 		<h1 class="fr">好家联</h1>
 	</div>
 	<div class="fr">
-		<div class="tel white font16 text-right" style="margin-top: 25px;margin-bottom:10px;position:relative">
+		<div class="tel white font16 text-right">
 			<i class="icon icon-tel"></i><span>400-823-6199</span>&nbsp;&nbsp;		
 			<a class="city font16" href="#">［上海站］</a>			
 		</div>			
