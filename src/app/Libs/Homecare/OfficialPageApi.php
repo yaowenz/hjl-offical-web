@@ -43,6 +43,41 @@ class OfficialPageApi
         return $workers;
     }
 
+    public function getBranchList($divisionId)
+    {
+        $params = ['offset' => 0, 'pagesize' => 100, 'division_id' => $divisionId];
+        $result = $this->api->getBranchList($params);
+
+        return $result;
+    }
+
+    public function getDivisions($cityId)
+    {
+        if ($cityId != '310100') {
+            return [];
+        } else {
+            return [
+                ['name' => '宝山区', 'value' => 310113],
+                ['name' => '长宁区', 'value' => 310105],
+                ['name' => '崇明县', 'value' => 310230],
+                ['name' => '奉贤区', 'value' => 310120],
+                ['name' => '虹口区', 'value' => 310109],
+                ['name' => '黄浦区', 'value' => 310101],
+                ['name' => '嘉定区', 'value' => 310114],
+                ['name' => '静安区', 'value' => 310106],
+                ['name' => '金山区', 'value' => 310116],
+                ['name' => '闵行区', 'value' => 310112],
+                ['name' => '浦东新区', 'value' => 310115],
+                ['name' => '普陀区', 'value' => 310107],
+                ['name' => '青浦区', 'value' => 310118],
+                ['name' => '松江区', 'value' => 310117],
+                ['name' => '徐汇区', 'value' => 310104],
+                ['name' => '杨浦区', 'value' => 310110],
+                ['name' => '闸北区', 'value' => 310108]
+            ];
+        }
+    }
+
     protected function checkResult($result)
     {
         return is_object($result) && property_exists($result, 'err') && $result->err == 0;

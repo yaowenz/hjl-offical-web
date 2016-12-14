@@ -18,8 +18,9 @@ $app->get('/', function ($request, $response, $args) {
 })->setName('index');
 
 $app->get('/order', function ($request, $response, $args) {
-    // Render order view
-    return $this->view->render($response, 'order.twig.php', $args);
+    $api = new OfficialPageApi;
+    $divisions = $api->getDivisions('310100');
+    return $this->view->render($response, 'order.twig.php', compact('divisions'));
 })->setName('order');
 
 $app->get('/branches', function ($request, $response, $args) {
@@ -31,4 +32,14 @@ $app->get('/about', function ($request, $response, $args) {
     // Render about view
     return $this->view->render($response, 'about.twig.php', $args);
 })->setName('about');
+
+$app->group('/api', function () {
+    $this->get('/branches', function ($request, $response, $args) {
+        $divisionId = (int)$request->getQueryParam('division_id', '');
+        $api = new OfficialPageApi;
+        $branches = $api->getBranchList($divisionId);
+        return $response->withJson($branches);
+    })->setName('api.branches');
+});
+
 

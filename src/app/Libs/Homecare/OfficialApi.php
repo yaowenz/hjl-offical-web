@@ -13,4 +13,9 @@ class OfficialApi extends PlatformApi
     {
         return $this->call('/official/workers', $data);
     }
+
+    public function getBranchList($data)
+    {
+        return $this->call('/official/branches', $data);
+    }
 }
