@@ -39,204 +39,30 @@
 		<div class="divider"><div class="divider-blue container"></div></div>
 		<div class="swiper-container swiper-business" style="height: 458px">
 			<ul class="swiper-wrapper business">
-				<li class="swiper-slide">
+				{% for job in jobs %}
+					{% if loop.index % 4 == 1 %}
+					<li class="swiper-slide">
+					{% endif %}
 					<div class="business-item fl">
 						<div class="business-item-detail clearfix">
 						    <div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">月嫂 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">月嫂丨钟点制</span>
+								<p class="mid-grey font18">{{ job.title }}</p>
+								<span class="light-grey">{{ job.job_role_name }}丨{{ job.job_type_name }}</span>
 							</div>
-							<i class="fr icon icon-business icon-yuesao"></i>
+							<i class="fr icon icon-business icon-{{ job.job_role }}"></i>
 						</div>
 						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
+							<p class="orange font28 text-center" style="margin: 18px 0 12px">{{ job.salary_name }}</p>
 							<div class="relative">
 								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
+								<span class="light-grey absolute update-time">{{ job.time_ago }} 更新</span>
 							</div>
 						</div>
 					</div>
-					<div class="business-item fr">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">护理 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">护理丨钟点制</span>
-							</div>
-							<i class="fr icon icon-business icon-care"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fl">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">保洁 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">保洁丨钟点制丨上海市长宁区</span>
-							</div>
-							<i class="fr icon icon-business icon-cleaning"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fr">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">育儿嫂 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">育儿嫂丨钟点制丨上海市长宁区</span>
-							</div>
-							<i class="fr icon icon-business icon-cook"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="swiper-slide">
-					<div class="business-item fl">
-						<div class="business-item-detail clearfix">
-						    <div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">月嫂2 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">月嫂丨钟点制</span>
-							</div>
-							<i class="fr icon icon-business icon-yuesao"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fr">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">护理2 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">护理丨钟点制</span>
-							</div>
-							<i class="fr icon icon-business icon-care"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fl">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">保洁2 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">保洁丨钟点制丨上海市长宁区</span>
-							</div>
-							<i class="fr icon icon-business icon-cleaning"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fr">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">育儿嫂2 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">育儿嫂丨钟点制丨上海市长宁区</span>
-							</div>
-							<i class="fr icon icon-business icon-cook"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="swiper-slide">
-					<div class="business-item fl">
-						<div class="business-item-detail clearfix">
-						    <div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">月嫂3 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">月嫂丨钟点制</span>
-							</div>
-							<i class="fr icon icon-business icon-yuesao"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fr">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">护理3 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">护理丨钟点制</span>
-							</div>
-							<i class="fr icon icon-business icon-care"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fl">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">保洁3 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">保洁丨钟点制丨上海市长宁区</span>
-							</div>
-							<i class="fr icon icon-business icon-cleaning"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-					<div class="business-item fr">
-						<div class="business-item-detail clearfix">
-							<div class="fl" style="margin-left: 14px">
-								<p class="mid-grey font18">育儿嫂3 住家 550平 3人 家常便饭</p>
-								<span class="light-grey">育儿嫂丨钟点制丨上海市长宁区</span>
-							</div>
-							<i class="fr icon icon-business icon-cook"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">4500.00元 / 月</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">10分钟前 更新</span>
-							</div>
-						</div>
-					</div>
-				</li>
+					{% if loop.index % 4 == 0 %}
+					</li>
+					{% endif %}
+				{% endfor %}
 			</ul>
 			<div class="swiper-pagination"></div>
 		</div>
@@ -251,14 +77,17 @@
 		<div class="divider"><div class="divider-blue container"></div></div>
 		<div class="swiper-container swiper-worker" style="height: 292px">
 			<ul class="swiper-wrapper worker">
-				<li class="swiper-slide">
+				{% for worker in workers %}
+					{% if loop.index % 4 == 1 %}
+					<li class="swiper-slide">
+					{% endif %}
 					<div class="worker-item">
 						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
+							<div class="photo inline-block"><img src="{{ worker.avatar_photo }}"></div>
 							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
+								<p style="margin-bottom: 10px"><span class="mid-grey font18">{{ worker.name }}&nbsp;&nbsp;</span><span class="light-grey font14">{{ worker.age }}岁</span></p>
+								<div class="light-grey font14" style="margin-bottom: 12px">{{ worker.job_role_name }}</div>
+								<div class="orange font14">{{ worker.salary_name }}</div>
 							</div>
 						</div>
 						<div class="worker-item-check">
@@ -266,201 +95,13 @@
 								<div style="margin-bottom: 8px">微信扫描二维码</div>
 								<div>查看阿姨详情</div>
 							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
+							<div class="qr fr" data-url="{{ worker.public_profile_url }}" style="margin: 20px">二维码</div>
 						</div>
 					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-				</li>
-				<li class="swiper-slide">
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-				</li>
-				<li class="swiper-slide">
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-					<div class="worker-item">
-						<div class="worker-item-detail">
-							<div class="photo inline-block"><img src=""></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">李阿姨&nbsp;&nbsp;</span><span class="light-grey font14">47岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">保洁</div>
-								<div class="orange font14">4500.00元 / 每月</div>
-							</div>
-						</div>
-						<div class="worker-item-check">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
-							</div>
-							<div class="qr fr" style="margin: 20px">二维码</div>
-						</div>
-					</div>
-				</li>
+					{% if loop.index % 4 == 0 %}
+					</li>
+					{% endif %}
+				{% endfor %}
 			</ul>
 			<div class="swiper-pagination"></div>
 		</div>
@@ -510,5 +151,17 @@
 		<a href="{{ path_for('branches') }}"><button class="join-button" style="margin-top: 35px">我要入驻</button></a>
 	</div>
 </div>
-
+<script type="text/javascript">
+$(function () {
+	$('.qr').each(function () {
+		var $this = $(this)
+		$this.qrcode({
+			width: 88,
+			height: 88,
+			correctLevel:0,
+			text: $this.data('url')
+		});
+	})
+})
+</script>
 {% endblock %}

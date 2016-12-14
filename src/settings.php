@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('Asia/Shanghai');
+
 return [
     'settings' => [
         'displayErrorDetails' => true, // set to false in production

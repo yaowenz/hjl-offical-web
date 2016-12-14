@@ -18,6 +18,7 @@
         <script src="js/vendor/jquery-3.1.0.min.js"></script>
         <script src="js/vendor/swiper-3.4.0.jquery.min.js"></script>
         <script src="js/vendor/custombox.min.js"></script>
+        <script src="js/vendor/jquery.qrcode.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         {% if _APP_ENV == 'production' %}
