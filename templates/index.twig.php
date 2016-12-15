@@ -38,34 +38,36 @@
     	<h3 class="text-center">最新业务</h3>
 		<div class="sub-title light-grey text-center">New Jobs</div>
 		<div class="divider"><div class="divider-green container"></div></div>
-		<div class="swiper-container swiper-business" style="height: 624px">
-			<ul class="swiper-wrapper business" style="padding-left: 20px">
-				{% for job in jobs %}
-					{% if loop.index % 6 == 1 %}
-					<li class="swiper-slide">
-					{% endif %}
-					<div class="business-item fl">
-						<div class="business-item-detail clearfix">
-						    <div class="fl" style="width: 420px; margin-left: 14px">
-								<p class="mid-grey font18">{{ job.title_auto }}</p>
-								<span class="light-grey">{{ job.display_address }}丨{{ job.job_type_name }}</span>
+		<div class="relative">
+			<div class="swiper-container swiper-business" style="height: 624px">
+				<ul class="swiper-wrapper business" style="padding-left: 20px">
+					{% for job in jobs %}
+						{% if loop.index % 6 == 1 %}
+						<li class="swiper-slide">
+						{% endif %}
+						<div class="business-item fl">
+							<div class="business-item-detail clearfix">
+							    <div class="fl" style="width: 420px; margin-left: 14px">
+									<p class="mid-grey font18">{{ job.title_auto }}</p>
+									<span class="light-grey">{{ job.display_address }}丨{{ job.job_type_name }}</span>
+								</div>
+								<i class="fr icon-job icon-{{ job.job_role }}"></i>
 							</div>
-							<i class="fr icon-job icon-{{ job.job_role }}"></i>
-						</div>
-						<div class="business-item-check absolute">
-							<p class="orange font28 text-center" style="margin: 18px 0 12px">{{ job.salary_name }}</p>
-							<div class="relative">
-								<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
-								<span class="light-grey absolute update-time">{{ job.time_ago }} 更新</span>
+							<div class="business-item-check absolute">
+								<p class="orange font28 text-center" style="margin: 18px 0 12px">{{ job.salary_name }}</p>
+								<div class="relative">
+									<div class="container" style="width: 116px"><button class="ayi-button">我有阿姨</button></div>
+									<span class="light-grey absolute update-time">{{ job.time_ago }} 更新</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					{% if loop.index % 6 == 0 %}
-					</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-			<div class="swiper-pagination"></div>
+						{% if loop.index % 6 == 0 %}
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="swiper-pagination business-pagination"></div>
 		</div>
 	</div>
 </div>
@@ -76,35 +78,37 @@
 		<h3 class="text-center">推荐阿姨</h3>
 		<div class="sub-title light-grey text-center">Good Ayi</div>
 		<div class="divider"><div class="divider-green container"></div></div>
-		<div class="swiper-container swiper-worker" style="height: 600px">
-			<ul class="swiper-wrapper worker" style="padding-left: 10px">
-				{% for worker in workers %}
-					{% if loop.index % 12 == 1 %}
-					<li class="swiper-slide">
-					{% endif %}
-					<div class="worker-item fl">
-						<div class="worker-item-detail clearfix">
-							<div class="fl photo text-center"><img src="{{ worker.avatar_photo }}"></div>
-							<div class="inline-block">
-								<p style="margin-bottom: 10px"><span class="mid-grey font18">{{ worker.name }}&nbsp;&nbsp;</span><span class="light-grey font14">{{ worker.age }}岁</span></p>
-								<div class="light-grey font14" style="margin-bottom: 12px">{{ worker.job_role_name }}</div>
-								<div class="orange font14">{{ worker.salary_name }}</div>
+		<div class="relative">
+			<div class="swiper-container swiper-worker" style="height: 625px">
+				<ul class="swiper-wrapper worker" style="padding-left: 10px">
+					{% for worker in workers %}
+						{% if loop.index % 12 == 1 %}
+						<li class="swiper-slide">
+						{% endif %}
+						<div class="worker-item fl">
+							<div class="worker-item-detail clearfix">
+								<div class="fl photo text-center"><img src="{{ worker.avatar_photo }}"></div>
+								<div class="inline-block">
+									<p style="margin-bottom: 10px"><span class="mid-grey font18">{{ worker.name }}&nbsp;&nbsp;</span><span class="light-grey font14">{{ worker.age }}岁</span></p>
+									<div class="light-grey font14" style="margin-bottom: 12px">{{ worker.job_role_name }}</div>
+									<div class="orange font14">{{ worker.salary_name }}</div>
+								</div>
+							</div>
+							<div class="worker-item-check absolute">
+								<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
+									<div style="margin-bottom: 8px">微信扫一扫</div>
+									<div>查看更多资料</div>
+								</div>
+								<div class="qr fr" data-url="{{ worker.public_profile_url }}" style="margin: 20px"></div>
 							</div>
 						</div>
-						<div class="worker-item-check absolute">
-							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫一扫</div>
-								<div>查看更多资料</div>
-							</div>
-							<div class="qr fr" data-url="{{ worker.public_profile_url }}" style="margin: 20px"></div>
-						</div>
-					</div>
-					{% if loop.index % 12 == 0 %}
-					</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-			<div class="swiper-pagination"></div>
+						{% if loop.index % 12 == 0 %}
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="swiper-pagination worker-pagination"></div>
 		</div>
 	</div>
 </div>

@@ -32,8 +32,9 @@ $(document).ready(function(){
 
     //最新业务
     var swiperBusiness = new Swiper(".swiper-container.swiper-business",{
-        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination.business-pagination',
         paginationClickable: true,
+        uniqueNavElements :false,
         loop: true,
         autoplay: 3000,
         // autoplayDisableOnInteraction: false,
@@ -69,8 +70,9 @@ $(document).ready(function(){
 
     //推荐阿姨循环
     var swiperWorker = new Swiper(".swiper-container.swiper-worker",{
-        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination.worker-pagination',
         paginationClickable: true,
+        uniqueNavElements :false,
         loop: true,
         autoplay: 6000,
         // autoplayDisableOnInteraction: false,
