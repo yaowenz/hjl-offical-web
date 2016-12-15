@@ -14,23 +14,23 @@
     	<h3 class="text-center">平台特色</h3>
 		<div class="sub-title light-grey text-center">Our Service</div>
 		<div class="divider"><div class="divider-green container"></div></div>
-		<ul class="feature">
-			<li class="text-center mid-grey font18">
+		<ul class="feature mid-grey font18 text-center">
+			<li>
 				<i class="icon icon-feature icon-feature-phone"></i>
 				<div style="margin: 22px 0 10px 0">海量真实阿姨在线</div>
 				<div>身份验证 真实可靠</div>
 			</li>
-			<li class="text-center mid-grey font18">
+			<li>
 				<i class="icon icon-feature icon-feature-video"></i>
 				<div style="margin: 22px 0 10px 0">预录“小视频”简历</div>
 				<div>足不出户 手机面试</div>
 			</li>
-			<li class="text-center mid-grey font18">
+			<li>
 				<i class="icon icon-feature icon-feature-aim"></i>
 				<div style="margin: 22px 0 10px 0">双方需求大数据匹配</div>
 				<div>找到最适合自己的家政员</div>
 			</li>
-			<li class="text-center mid-grey font18">
+			<li>
 				<i class="icon icon-feature icon-feature-change"></i>
 				<div style="margin: 22px 0 10px 0">一键换人 定期评价</div>
 				<div>后续服务无缝对接</div>
@@ -43,7 +43,7 @@
 <div class="wrapper container" style="margin-bottom: 50px">
 	<div class="content">
 		<h3 class="text-center">身边门店</h3>
-		<div class="sub-title light-grey text-center">Nearby breadhes</div>
+		<div class="sub-title light-grey text-center">Nearby Branches</div>
 		<div class="divider"><div class="divider-green container"></div></div>
 		<div class="mid-grey" style="margin: 50px 0">
 			<select class="type-select" style="margin-right: 30px">
@@ -58,13 +58,17 @@
 		<div class="swiper-container shop-select" style="height: 694px">
 			<ul class="swiper-wrapper shop-list branch-list">
 			</ul>
-			<div class="swiper-button-prev"><i class="icon swiper-icon swiper-icon-left"></i><span class="swiper-text">上一页</span></div>
-		    <div class="swiper-button-next"><span class="swiper-text">下一页</span><i class="icon swiper-icon swiper-icon-right"></i></div>
+			<div class="swiper-button-prev"><i class="icon swiper-icon swiper-icon-prev"></i><span class="swiper-text">上一页</span></div>
+		    <div class="swiper-button-next"><span class="swiper-text">下一页</span><i class="icon swiper-icon swiper-icon-next"></i></div>
 		</div>
 	</div>
 </div>
 <div class="fl shop-list-item" id="branch-template" style="display:none;">
-	<div class="fl shop text-center"><div class="relative img-wrapper"><div class="shop-qr absolute"></div><img class="shop-logo"></div></div>
+	<div class="fl shop text-center">
+		<div class="relative img-wrapper">
+			<!-- <div class="shop-qr absolute"></div> -->
+			<img class="shop-logo"></div>
+		</div>
 	<div class="fl shop-info">
 		<div class="font18 branch-name" style="margin-top: 10px"><i class="icon icon-shop"></i></div>
 		<div class="icon star star4"></div>
@@ -85,7 +89,15 @@ var createBranchNode = (function () {
 		var $node = $nodeTemplate.clone()
 		$node.find('.branch-name').text(branch.branch_name)
 		$node.find('.address').text(branch.address)
-		$node.find('.shop-logo').attr('src', branch.logo_url)
+		if(branch.logo_url){
+			$node.find('.shop-logo').attr('src', branch.logo_url);
+		} else{
+			$node.find('.shop-logo').css('display','none');
+			var firstWord = branch.branch_name.charAt(0);
+			var $div = $('<div class="shop-text white"></div>');
+			$div.text(firstWord);
+			$node.find('.shop-logo').parent('.img-wrapper').append($div);
+		}
 		$node.find('.shop-qr').data('branch_url', branch.branch_url)
 		$node.css('display', 'block')
 		return $node

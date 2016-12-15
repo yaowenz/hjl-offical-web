@@ -10,22 +10,22 @@
 <div class="wrapper container">
 	<div class="content text-center">
 		<h2 class="text-center">找好阿姨？不再是难事！</h2>
-		<div class="sub-title light-grey">Good Ayi?Easy!</div>
+		<div class="sub-title light-grey">Good Ayi? Easy!</div>
 		<div class="divider"><div class="divider-green container"></div></div>
-		<ul class="advantage font24">
-			<li class="text-center mid-grey">
-				<i class="icon icon-advantage icon-phone"></i>
-				<div style="margin-bottom: 16px">海量真实阿姨在线</div>
+		<ul class="feature mid-grey font18 text-center">
+			<li>
+				<i class="icon icon-feature icon-feature-phone"></i>
+				<div style="margin: 22px 0 10px 0">海量真实阿姨在线</div>
 				<div>身份验证 真实可靠</div>
 			</li>
-			<li class="text-center mid-grey">
-				<i class="icon icon-advantage icon-video"></i>
-				<div style="margin-bottom: 16px">预录“小视频”简历</div>
+			<li>
+				<i class="icon icon-feature icon-feature-video"></i>
+				<div style="margin: 22px 0 10px 0">预录“小视频”简历</div>
 				<div>足不出户 手机面试</div>
 			</li>
-			<li class="text-center mid-grey">
-				<i class="icon icon-advantage icon-change"></i>
-				<div style="margin-bottom: 16px">一键换人 定期评价</div>
+			<li>
+				<i class="icon icon-feature icon-feature-change"></i>
+				<div style="margin: 22px 0 10px 0">一键换人 定期评价</div>
 				<div>后续服务无缝对接</div>
 			</li>
 		</ul>
@@ -93,8 +93,8 @@
 						</div>
 						<div class="worker-item-check absolute">
 							<div class="inline-block light-grey font14" style="padding-left: 15px; padding-top: 40px">
-								<div style="margin-bottom: 8px">微信扫描二维码</div>
-								<div>查看阿姨详情</div>
+								<div style="margin-bottom: 8px">微信扫一扫</div>
+								<div>查看更多资料</div>
 							</div>
 							<div class="qr fr" data-url="{{ worker.public_profile_url }}" style="margin: 20px"></div>
 						</div>

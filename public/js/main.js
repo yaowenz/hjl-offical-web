@@ -35,7 +35,7 @@ $(document).ready(function(){
         pagination: '.swiper-pagination',
         paginationClickable: true,
         loop: true,
-        autoplay: 2000,
+        autoplay: 3000,
         // autoplayDisableOnInteraction: false,
     });
     $('.swiper-container.swiper-business').hover(function(){
@@ -72,7 +72,7 @@ $(document).ready(function(){
         pagination: '.swiper-pagination',
         paginationClickable: true,
         loop: true,
-        autoplay: 2000,
+        autoplay: 6000,
         // autoplayDisableOnInteraction: false,
     });
     $('.swiper-container.swiper-worker').hover(function(){
@@ -88,12 +88,12 @@ $(document).ready(function(){
         observer: true,
     });
 
-    //门店logo
+    //门店二维码
     $('body').on('mouseenter', '.shop-list-item', function(){
-        $(this).addClass('shop-list-item-active').find('.shop-qr').animate({left: '0px'});
+        $(this).addClass('shop-list-item-active');
     });
     $('body').on('mouseleave', '.shop-list-item', function(){
-        $(this).removeClass('shop-list-item-active').find('.shop-qr').animate({left: '-78px'});
+        $(this).removeClass('shop-list-item-active');
     });
 
     //侧边栏

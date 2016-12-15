@@ -20,7 +20,8 @@
 	background: #17BA7B;
 }
 .sub-title {
-	font-size: 13px;
+	font-size: 14px;
+	margin-top: 8px;
 	margin-bottom: 16px;
 }
 
@@ -94,33 +95,6 @@
 .index-bg {
 	height: 720px;
 	background: url("../image/index-bg.jpg") no-repeat center;
-}
-.advantage > li {
-	display: inline-block;
-	margin-top: 54px;
-	margin-right: 22px;
-	width: 278px;
-	height: 248px;
-	border-radius: 5px;
-	border: 1px solid #eee;
-}
-.advantage > li:last-child {
-	margin-right: 0;
-}
-.icon-advantage {
-	margin-top: 20px;
-	margin-bottom: 28px;
-	width: 103px;
-	height: 103px;
-}
-.icon-phone {
-    background-position: -20px -202px;
-}
-.icon-video {
-	background-position: -143px -202px;
-}
-.icon-change {
-	background-position: -265px -202px;
 }
 .business-item {
 	margin-right: 40px;
@@ -325,7 +299,7 @@
 .feature > li {
 	display: inline-block;
 	margin-top: 54px;
-	margin-right: 22px;
+	margin-right: 20px;
 	width: 278px;
 	height: 248px;
 	border-radius: 5px;
@@ -376,32 +350,33 @@
 	opacity: 1!important;
 }
 .swiper-text {
-	color: #17BA7B;
-	text-decoration: underline;
-}
-.swiper-button-disabled .swiper-text {
 	color: #999;
-	text-decoration: none;
+}
+.swiper-button-prev:hover .swiper-text {
+	color: #17BA7B;
+}
+.swiper-button-next:hover .swiper-text {
+	color: #17BA7B;
 }
 .swiper-icon {
 	width: 12px;
 	height: 21px;
 }
-.swiper-icon-left {
-	margin-right: 22px;
-	background-position: -387px -202px;
-}
-.swiper-button-disabled .swiper-icon-left {
+.swiper-icon-prev {
 	margin-right: 22px;
 	background-position: -387px -233px;
 }
-.swiper-icon-right {
-	margin-left: 22px;
-	background-position: -408px -202px;
+.swiper-button-prev:hover .swiper-icon-prev {
+	margin-right: 22px;
+	background-position: -387px -202px;
 }
-.swiper-button-disabled .swiper-icon-right {
+.swiper-icon-next {
 	margin-left: 22px;
 	background-position: -408px -233px;
+}
+.swiper-button-next:hover .swiper-icon-next {
+	margin-left: 22px;
+	background-position: -408px -202px;
 }
 
 .shop-list-item {
@@ -417,13 +392,18 @@
 }
 .img-wrapper {
 	width: 78px;
+	margin-top: 10px;
 	margin-left: 10px;
 	overflow: hidden;
 }
 .shop-logo {
 	width: 78px;
 	height: 78px;
-	margin-top: 10px;
+}
+.shop-text {
+	height: 78px;
+	font-size: 56px;
+	background: #17BA7B;
 }
 .shop-qr {
 	left: -78px;
