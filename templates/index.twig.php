@@ -47,8 +47,8 @@
 					<div class="business-item fl">
 						<div class="business-item-detail clearfix">
 						    <div class="fl" style="width: 420px; margin-left: 14px">
-								<p class="mid-grey font18">{{ job.title }}</p>
-								<span class="light-grey">{{ job.job_role_name }}丨{{ job.job_type_name }}</span>
+								<p class="mid-grey font18">{{ job.title_auto }}</p>
+								<span class="light-grey">{{ job.display_address }}丨{{ job.job_type_name }}</span>
 							</div>
 							<i class="fr icon-job icon-{{ job.job_role }}"></i>
 						</div>
