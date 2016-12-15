@@ -58,13 +58,13 @@
 		<div class="swiper-container shop-select" style="height: 694px">
 			<ul class="swiper-wrapper shop-list branch-list">
 			</ul>
-			<div class="icon swiper-button swiper-button-prev"></div>
-		    <div class="icon swiper-button swiper-button-next"></div>
+			<div class="swiper-button-prev"><i class="icon swiper-icon swiper-icon-left"></i><span class="swiper-text">上一页</span></div>
+		    <div class="swiper-button-next"><span class="swiper-text">下一页</span><i class="icon swiper-icon swiper-icon-right"></i></div>
 		</div>
 	</div>
 </div>
 <div class="fl shop-list-item" id="branch-template" style="display:none;">
-	<div class="fl shop text-center"><img class="shop-logo" style="margin-top: 12px"></div>
+	<div class="fl shop text-center"><div class="relative img-wrapper"><img class="shop-qr absolute" src=""><img class="shop-logo"></div></div>
 	<div class="fl shop-info">
 		<div class="font18 branch-name" style="margin-top: 10px"><i class="icon icon-shop"></i></div>
 		<div class="icon star star4"></div>
@@ -72,9 +72,10 @@
 	</div>
 	<div class="fr icon icon-gold text-center" style="padding-top: 12px"><span class="white font20 bold">999</span></div>
 </div>
+
 <!--广告-->
-<div class="ad-bg orange-bg text-center">
-	<span class="white" style="font-size: 44px">扫描二维码 体验线上微店</span>
+<div class="ad-bg orange-bg">
+	
 </div>
 
 <script type="text/javascript">

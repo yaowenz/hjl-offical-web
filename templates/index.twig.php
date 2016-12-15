@@ -46,7 +46,7 @@
 					{% endif %}
 					<div class="business-item fl">
 						<div class="business-item-detail clearfix">
-						    <div class="fl" style="margin-left: 14px">
+						    <div class="fl" style="width: 420px; margin-left: 14px">
 								<p class="mid-grey font18">{{ job.title }}</p>
 								<span class="light-grey">{{ job.job_role_name }}丨{{ job.job_type_name }}</span>
 							</div>

@@ -10,9 +10,9 @@
 <!--商务合作-->
 <div class="wrapper container" style="margin-bottom: 112px">
     <div class="content">
-    	<h3 class="text-center" style="margin-bottom: 0">商务合作 / 门店入驻</h3>
-		<p class="light-grey text-center" style="margin: 0 0 14px 0; font-size: 13px">Guarantee</p>
-		<div class="divider"><div class="divider-blue container"></div></div>
+    	<h3 class="text-center">商务合作 / 门店入驻</h3>
+		<div class="sub-title light-grey text-center">Contact us</div>
+		<div class="divider"><div class="divider-green container"></div></div>
 		<div class="cooperate mid-grey font24">
 			<div class="inline-block" style="width: 378px">
 				<div class="fl icon-cooperate text-center"><i class="icon icon-tel-green" style="margin-top: 22px"></i></div>

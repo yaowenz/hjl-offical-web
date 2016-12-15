@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     //自适应
     $('body').width($(window).width());
     $(window).resize(function(){
@@ -29,7 +30,21 @@ $(document).ready(function(){
             $('.nav a.current').addClass('active')
      });
 
-    //最新业务窗口
+    //最新业务
+    var swiperBusiness = new Swiper(".swiper-container.swiper-business",{
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        autoplay: 2000,
+        // autoplayDisableOnInteraction: false,
+    });
+    $('.swiper-container.swiper-business').hover(function(){
+        swiperBusiness.stopAutoplay();
+    },function(){
+        swiperBusiness.startAutoplay();
+    });
+
+    //最新业务详情
     $('.business-item').hover(function(){
         $(this).find('.business-item-check').slideDown();
     }, function(){
@@ -51,23 +66,8 @@ $(document).ready(function(){
     }, function(){
         $(this).removeClass('shadow').find('.worker-item-check').removeClass('shadow').slideUp();
     });
-    
-    //最新业务
-    var swiperBusiness = new Swiper(".swiper-container.swiper-business",{
-        pagination: '.swiper-pagination',
-        // uniqueNavElements :false,
-        paginationClickable: true,
-        loop: true,
-        autoplay: 2000,
-        // autoplayDisableOnInteraction: false,
-    });
-    $('.swiper-container.swiper-business').hover(function(){
-        swiperBusiness.stopAutoplay();
-    },function(){
-        swiperBusiness.startAutoplay();
-    });
 
-    //推荐阿姨
+    //推荐阿姨循环
     var swiperWorker = new Swiper(".swiper-container.swiper-worker",{
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -81,20 +81,21 @@ $(document).ready(function(){
         swiperWorker.startAutoplay();
     });
 
-    //在线选阿姨
+    //在线选门店循环
     var swiperSelect = new Swiper(".swiper-container.shop-select",{
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
-        // autoplayDisableOnInteraction: false,
+        observer: true,
     });
 
     //门店logo
-    $('.shop-list-item').hover(function(){
-        $(this).find('.shop i').removeClass('shop-logo').addClass('shop-qr');
-    }, function(){
-        $(this).find('.shop i').addClass('shop-logo').removeClass('shop-qr');
+    $('body').on('mouseenter', '.shop-list-item', function(){
+        $(this).addClass('shop-list-item-active').find('.shop-qr').animate({left: '0px'});
     });
-    
+    $('body').on('mouseleave', '.shop-list-item', function(){
+        $(this).removeClass('shop-list-item-active').find('.shop-qr').animate({left: '-78px'});
+    });
+
     //侧边栏
     // $('.wechat').hover(function(){
     //     $('.wx-qrcode').fadeIn();
