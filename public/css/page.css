@@ -97,6 +97,7 @@
 	background: url("../image/index-bg.jpg") no-repeat center;
 }
 .business-item {
+	margin-top: 46px;
 	margin-right: 40px;
 }
 .icon-job {
@@ -139,7 +140,6 @@
 	background-position: -16px -147px;
 }
 .business-item-detail {
-	margin-top: 46px;
 	width: 558px;
 	height: 118px;
 	border: 1px solid #eee;
@@ -180,10 +180,9 @@
 	border: 1px solid #eee;
 }
 .photo {
-	width: 78px;
-	height: 78px;
+	width: 80px;
+	height: 80px;
 	margin: 20px 20px 0 24px;
-	border: 1px solid #eee;
 }
 .photo img {
 	height: 100%;

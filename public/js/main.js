@@ -35,8 +35,8 @@ $(document).ready(function(){
         pagination: '.swiper-pagination.business-pagination',
         paginationClickable: true,
         uniqueNavElements :false,
-        loop: true,
-        autoplay: 3000,
+        // loop: true,
+        // autoplay: 3000,
         // autoplayDisableOnInteraction: false,
     });
     $('.swiper-container.swiper-business').hover(function(){
@@ -56,7 +56,8 @@ $(document).ready(function(){
     $('.ayi-button').on('click', function(e){
         Custombox.open({
             target: '.join-modal',
-            effect: 'fadein'
+            effect: 'fadein',
+            speed: 300,
         });
         e.preventDefault();
     });
