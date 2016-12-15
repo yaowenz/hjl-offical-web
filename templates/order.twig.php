@@ -64,7 +64,7 @@
 	</div>
 </div>
 <div class="fl shop-list-item" id="branch-template" style="display:none;">
-	<div class="fl shop text-center"><div class="relative img-wrapper"><img class="shop-qr absolute" src=""><img class="shop-logo"></div></div>
+	<div class="fl shop text-center"><div class="relative img-wrapper"><div class="shop-qr absolute"></div><img class="shop-logo"></div></div>
 	<div class="fl shop-info">
 		<div class="font18 branch-name" style="margin-top: 10px"><i class="icon icon-shop"></i></div>
 		<div class="icon star star4"></div>
@@ -86,6 +86,7 @@ var createBranchNode = (function () {
 		$node.find('.branch-name').text(branch.branch_name)
 		$node.find('.address').text(branch.address)
 		$node.find('.shop-logo').attr('src', branch.logo_url)
+		$node.find('.shop-qr').data('branch_url', branch.branch_url)
 		$node.css('display', 'block')
 		return $node
 	}
@@ -102,6 +103,19 @@ function showBranches(branches) {
 		}
 		$container.append($li)
 	}
+
+	$('.shop-qr').each(function () {
+		var $this = $(this)
+		var url = $this.data('branch_url')
+		if (url) {
+			$this.qrcode({
+				width: 78,
+				height: 78,
+				correctLevel: 0,
+				text: url
+			});
+		}
+	})
 }
 function updateBranches(divisionId) {
 	$.get('{{ path_for('api.branches') }}', {
