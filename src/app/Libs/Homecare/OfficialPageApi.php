@@ -53,10 +53,9 @@ class OfficialPageApi
 
     public function getDivisions($cityId)
     {
-        if ($cityId != '310100') {
-            return [];
-        } else {
-            return [
+        $divisions = [];
+        if ($cityId == '310100') {
+            $divisions = [
                 ['name' => '宝山区', 'value' => 310113],
                 ['name' => '长宁区', 'value' => 310105],
                 ['name' => '崇明县', 'value' => 310230],
@@ -76,6 +75,13 @@ class OfficialPageApi
                 ['name' => '闸北区', 'value' => 310108]
             ];
         }
+
+        $allValues = array_map(function ($division) {
+            return $division['value'];
+        }, $divisions);
+        array_unshift($divisions, ['name' => '全部', 'value' => implode(',', $allValues)]);
+
+        return $divisions;
     }
 
     protected function checkResult($result)

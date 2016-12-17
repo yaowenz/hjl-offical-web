@@ -83,6 +83,11 @@
 </div>
 
 <script type="text/javascript">
+var swiperShop = new Swiper(".swiper-container.shop-select",{
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    observer: true,
+});
 var createBranchNode = (function () {
 	var $nodeTemplate = $('#branch-template').removeAttr('id')
 	return function (branch) {
@@ -129,12 +134,28 @@ function showBranches(branches) {
 		}
 	})
 }
+var getBranches = (function () {
+	var cache = {}
+	return function (divisionId) {
+		if (cache[divisionId]) {
+			return $.Deferred().resolve(cache[divisionId])
+		} else {
+			return $.get('{{ path_for('api.branches') }}', {
+				division_id: divisionId
+			}).then(function (data) {
+				if (data.err == 0) {
+					cache[data.data.division_id] = data
+				}
+				return data
+			})
+		}
+	}
+})()
 function updateBranches(divisionId) {
-	$.get('{{ path_for('api.branches') }}', {
-		division_id: divisionId
-	}).then(function (data) {
-		if (data.err == 0) {
+	getBranches(divisionId).then(function (data) {
+		if (data.err == 0 && data.data.division_id == $('#division').val()) {
 			showBranches(data.data.rows)
+			swiperShop.slideTo(0)
 		}
 	})
 }

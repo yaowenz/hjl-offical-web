@@ -84,13 +84,6 @@ $(document).ready(function(){
         swiperWorker.startAutoplay();
     });
 
-    //在线选门店循环
-    var swiperSelect = new Swiper(".swiper-container.shop-select",{
-        prevButton:'.swiper-button-prev',
-        nextButton:'.swiper-button-next',
-        observer: true,
-    });
-
     //门店二维码
     $('body').on('mouseenter', '.shop-list-item', function(){
         $(this).addClass('shop-list-item-active');

@@ -35,7 +35,7 @@ $app->get('/about', function ($request, $response, $args) {
 
 $app->group('/api', function () {
     $this->get('/branches', function ($request, $response, $args) {
-        $divisionId = (int)$request->getQueryParam('division_id', '');
+        $divisionId = (string)$request->getQueryParam('division_id', '');
         $api = new OfficialPageApi;
         $branches = $api->getBranchList($divisionId);
         return $response->withJson($branches);
