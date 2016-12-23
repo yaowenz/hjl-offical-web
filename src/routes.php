@@ -36,7 +36,7 @@ $app->get('/about', function ($request, $response, $args) {
 
 $app->get('/captcha', function ($request, $response, $args) {
     $builder = new Gregwar\Captcha\CaptchaBuilder;
-    $builder->build();
+    $builder->build(72, 30);
     $_SESSION['submit-branch-captcha'] = $builder->getPhrase();
     return $response->withHeader('Content-Type', 'image/jpeg')->write($builder->get());
 })->setName('captcha');

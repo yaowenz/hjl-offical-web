@@ -1,0 +1,258 @@
+/* 公共部分 */
+body {	
+	font-family: 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif!important;
+}
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	background: url('../image/web-icon.png') no-repeat;
+}
+.container {
+	margin: 0 auto!important;
+	padding: 0!important;
+}
+.wrapper {
+	margin: 0 18px;
+}
+.clearfix {
+	clear: both;
+}
+img {
+	width: 100%;
+}
+h3 {
+	font-weight: bold!important;
+	margin: 0!important;
+	font-size: 18px!important;
+}
+.title {
+	margin-top: 24px;
+}
+.sub-title {
+	margin: 4px 0;
+	color: #999;
+	font-size: 12px;
+}
+.divider {
+	width: 100%;
+	height: 1px;
+	background: #ccc;
+}
+.divider-green {
+	width: 30%;
+	height: 1px;
+	background: #17BA7B; 
+}
+.content {
+	margin-top: 20px;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.nopadding {
+	padding: 0!important;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.color3 {
+	color: #333;
+}
+.color6 {
+	color: #666;
+}
+.color9 {
+	color: #999;
+}
+.font12 {
+	font-size: 12px;
+}
+.font15 {
+	font-size: 15px;
+}
+.font16 {
+	font-size: 16px;
+}
+
+/* 特点 */
+.advantage {
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+.advantage > li {
+	margin-bottom: 15px;
+}
+.advantage > li:last-child {
+	margin-bottom: 0;
+}
+.advantage > li > div {
+	width: 48%;
+	height: 150px;
+	border: 1px solid #eee;
+}
+.icon-advantage {
+	width: 44px;
+	height: 34px;
+	margin-top: 18px;
+	background-size: 1000% auto;
+}
+.icon-shop {
+	background-position: -302px -28px;
+}
+.icon-counter {
+	background-position: -347px -28px;
+}
+.icon-manage {
+	background-position: -394px -28px;
+}
+.icon-safe {
+	background-position: -302px -77px;
+}
+.icon-reputation {
+	background-position: -344px -77px;
+}
+.mobile-apply-button {
+	width: 80%;
+	height: 42px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	background: #17BA7B;
+}
+.feature > li {
+	margin-bottom: 10px;
+}
+.feature > li:last-child {
+	margin-bottom: 30px;
+}
+.feature-item {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid #eee;
+}
+.feature-item-detail {
+	display: none;
+	padding: 10px;
+	width: 100%;
+	height: 80px;
+	line-height: 20px;
+	border-top: none;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.icon-feature {
+	margin: 0 20px 0 10px;
+	width: 50px;
+	height: 50px;
+	background-size: auto 1000%;
+}
+.feature-title {
+	font-size: 15px;
+}
+.icon-slide {
+	margin-top: 22px;
+	margin-right: 10px;
+	width: 40px;
+	height: 24px;
+	background-size: 1000% auto;
+}
+.icon-down {
+	transform: rotate(0deg);
+    transition: all .25s ease 0s;
+	background-position: -284px -132px;
+}
+.icon-up {
+	transform: rotate(180deg);
+    transition: all .25s ease 0s;
+}
+.icon-person {
+	background-position: -7px -392px;
+}
+.icon-order {
+	background-position: -52px -392px;
+}
+.icon-finance {
+	background-position: -100px -392px;
+}
+.icon-data {
+	background-position: -145px -392px;
+}
+.icon-service {
+	background-position: -2px -442px;
+}
+.icon-online-shop {
+	background-position: -50px -442px;
+}
+.icon-tv {
+	background-position: -95px -442px;
+}
+.green-bg {
+	height: 120px;
+	line-height: 120px;
+	background: url('../image/green-bg.jpg') no-repeat center;
+	background-size: auto 100%;
+}
+.footer {
+	padding-top: 1px;
+	height: 90px;
+	background: #35353C;
+}
+.mobile-modal {
+	display: none;
+	padding-bottom: 15px!important;
+	width: 90%;
+	background: #fff;
+	border-radius: 3px;
+}
+.icon-close {
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	background-position: -262px -157px;
+}
+.icon-join {
+	width: 60px;
+	height: 60px;
+	background-size: 500% auto;
+	background-position: -140px -20px;
+}
+.form-group {
+	margin: 0 0 16px 0!important;
+}
+.content label {
+	width: 75px;
+	text-align: left!important;
+}
+.content input {
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: #eee;
+}
+.submit-button {
+	margin-top: 15px;
+	width: 100%;
+	height: 36px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	background: #17BA7B;
+}
+.code {
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+    width: 80px;
+    height: 30px;
+}
