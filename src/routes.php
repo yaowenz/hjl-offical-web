@@ -1,6 +1,7 @@
 <?php
 // Routes
 
+use App\Libs\Homecare\OfficialApi;
 use App\Libs\Homecare\OfficialPageApi;
 
 $app->get('/', function ($request, $response, $args) {
@@ -33,12 +34,39 @@ $app->get('/about', function ($request, $response, $args) {
     return $this->view->render($response, 'about.twig.php', $args);
 })->setName('about');
 
+$app->get('/captcha', function ($request, $response, $args) {
+    $builder = new Gregwar\Captcha\CaptchaBuilder;
+    $builder->build();
+    $_SESSION['submit-branch-captcha'] = $builder->getPhrase();
+    return $response->withHeader('Content-Type', 'image/jpeg')->write($builder->get());
+})->setName('captcha');
+
+$app->get('/m/branches', function ($request, $response, $args) {
+    return $this->view->render($response, 'm/branches.twig.php', $args);
+})->setName('m.branches');
+
 $app->group('/api', function () {
     $this->get('/branches', function ($request, $response, $args) {
         $divisionId = (string)$request->getQueryParam('division_id', '');
         $api = new OfficialPageApi;
         $branches = $api->getBranchList($divisionId);
         return $response->withJson($branches);
+    })->setName('api.branches');
+
+    $this->post('/branches', function ($request, $response, $args) {
+        $input = $request->getParams();
+        $input = is_array($input) ? $input : [];
+        if (isset($input['captcha']) &&
+            isset($_SESSION['submit-branch-captcha']) &&
+            $input['captcha'] == $_SESSION['submit-branch-captcha']
+        ) {
+            unset($_SESSION['submit-branch-captcha']);
+            $api = new OfficialApi;
+            $data = $api->newBranch($input);
+        } else {
+            $data = ['err' => 'captcha', 'msg' => '验证码错误'];
+        }
+        return $response->withJson($data);
     })->setName('api.branches');
 });
 

@@ -18,4 +18,9 @@ class OfficialApi extends PlatformApi
     {
         return $this->call('/official/branches', $data);
     }
+
+    public function newBranch($data)
+    {
+        return $this->call('/official/new-branch', $data, true);
+    }
 }
