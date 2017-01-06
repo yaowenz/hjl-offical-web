@@ -1,6 +1,6 @@
 <!--页脚-->
 <div class="foot">
-	<div class="container" style="width: 580px">
+	<div class="container" style="width: 610px">
 		<div class="light-grey font22" style="padding-top: 44px">
 			<a class="lighter-grey" href="{{ path_for('index') }}">首页</a><em>/</em>
 			<a class="lighter-grey" href="{{ path_for('order') }}">找阿姨</a><em>/</em>
