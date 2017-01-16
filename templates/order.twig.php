@@ -67,7 +67,7 @@
 	<div class="fl shop text-center">
 		<div class="relative img-wrapper">
 			<!-- <div class="shop-qr absolute"></div> -->
-			<img class="shop-logo"></div>
+			<img class="shop-logo swiper-lazy"></div>
 		</div>
 	<div class="fl shop-info">
 		<div class="font18 branch-name" style="margin-top: 10px"><i class="icon icon-shop"></i></div>
@@ -87,6 +87,8 @@ var swiperShop = new Swiper(".swiper-container.shop-select",{
     prevButton:'.swiper-button-prev',
     nextButton:'.swiper-button-next',
     observer: true,
+    preloadImages: false,
+    lazyLoading: true
 });
 var createBranchNode = (function () {
 	var $nodeTemplate = $('#branch-template').removeAttr('id')
@@ -95,7 +97,7 @@ var createBranchNode = (function () {
 		$node.find('.branch-name').text(branch.branch_name)
 		$node.find('.address').text(branch.address)
 		if(branch.logo_url){
-			$node.find('.shop-logo').attr('src', branch.logo_url);
+			$node.find('.shop-logo').attr('data-src', branch.logo_url);
 		} else{
 			$node.find('.shop-logo').css('display','none');
 			var firstWord = branch.branch_name.charAt(0);
