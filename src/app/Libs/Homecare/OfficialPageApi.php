@@ -45,7 +45,7 @@ class OfficialPageApi
 
     public function getBranchList($divisionId)
     {
-        $params = ['offset' => 0, 'pagesize' => 100, 'division_id' => $divisionId];
+        $params = ['offset' => 0, 'pagesize' => 0, 'division_id' => $divisionId];
         $result = $this->api->getBranchList($params);
 
         return $result;
